@@ -9,6 +9,10 @@ const PersonMaker = props => {
     border-radius: 20px;
     border: 1px solid gray;
     width: 30%;
+
+    @media only screen and (max-width: 400px) {
+        width: 80%
+      }
     `
 
     const PersonMakerH2 = styled.h2`

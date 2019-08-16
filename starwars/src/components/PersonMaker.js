@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const PersonMaker = props => {
     const PersonMakerDiv = styled.div`
-    background-color: white;
+    background-color: #defbfc;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
@@ -25,7 +25,7 @@ const PersonMaker = props => {
             <PersonMakerH2>{props.personName}</PersonMakerH2>
             <PersonMakerP>Birth Year: {props.birthYear}</PersonMakerP>
             <PersonMakerP>Eye Color: {props.eyeColor}</PersonMakerP>
-            <PersonMakerP>URL: <a href={props.personUrl}>{props.personUrl}</a></PersonMakerP>
+            <PersonMakerP><a href={props.personUrl} target="_blank" rel="noopener noreferrer">External API Link</a></PersonMakerP>
         </PersonMakerDiv>
     )
 }
